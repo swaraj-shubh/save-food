@@ -29,7 +29,7 @@ export function Donate() {
   };
 
   return (
-    <div className="space-y-12">
+    <div className="w-full space-y-12">
       <section className="text-center">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
           Donate Surplus Food

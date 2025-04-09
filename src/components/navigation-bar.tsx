@@ -11,8 +11,8 @@ import {
 
 export function NavigationBar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex items-center h-16">
+    <header className="sticky w-full top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="flex items-center w-full h-16 px-4 md:px-8">
         <div className="hidden mr-4 md:flex">
           <a className="flex items-center mr-6 space-x-2" href="/">
             <Heart className="w-6 h-6 fill-primary text-primary" />
@@ -51,9 +51,9 @@ export function NavigationBar() {
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className="px-0 mr-2 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+              className="px-0 mr-2 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden hover:bg-muted"
             >
-              <Menu className="w-6 h-6" />
+              <Menu className="w-10 h-6 text-purple-600" />
               <span className="sr-only">Toggle Menu</span>
             </Button>
           </SheetTrigger>

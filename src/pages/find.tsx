@@ -19,7 +19,7 @@ import { Clock, MapPin, Search, UtensilsCrossed } from 'lucide-react';
 
 export function Find() {
   return (
-    <div className="space-y-12">
+    <div className="w-full space-y-12">
       <section className="text-center">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
           Find Available Food
@@ -30,7 +30,7 @@ export function Find() {
         </p>
       </section>
 
-      <Card className="mx-auto max-w-2xl">
+      <Card className="max-w-2xl mx-auto">
         <CardHeader>
           <CardTitle>Search Filters</CardTitle>
           <CardDescription>
@@ -88,7 +88,7 @@ export function Find() {
         </CardContent>
         <CardFooter>
           <Button className="w-full">
-            <Search className="mr-2 h-4 w-4" />
+            <Search className="w-4 h-4 mr-2" />
             Search Available Food
           </Button>
         </CardFooter>
@@ -103,19 +103,19 @@ export function Find() {
           <CardContent>
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <UtensilsCrossed className="h-4 w-4 text-muted-foreground" />
+                <UtensilsCrossed className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   20 servings available
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 text-muted-foreground" />
+                <Clock className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   Pickup by 6:00 PM today
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4 text-muted-foreground" />
+                <MapPin className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   2.5 km away
                 </span>
@@ -135,19 +135,19 @@ export function Find() {
           <CardContent>
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <UtensilsCrossed className="h-4 w-4 text-muted-foreground" />
+                <UtensilsCrossed className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   15 meals available
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 text-muted-foreground" />
+                <Clock className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   Pickup by 7:30 PM today
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4 text-muted-foreground" />
+                <MapPin className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   1.8 km away
                 </span>
@@ -167,19 +167,83 @@ export function Find() {
           <CardContent>
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
-                <UtensilsCrossed className="h-4 w-4 text-muted-foreground" />
+                <UtensilsCrossed className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   Various vegetables available
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <Clock className="h-4 w-4 text-muted-foreground" />
+                <Clock className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   Pickup by 5:00 PM today
                 </span>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4 text-muted-foreground" />
+                <MapPin className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">
+                  3.2 km away
+                </span>
+              </div>
+            </div>
+          </CardContent>
+          <CardFooter>
+            <Button className="w-full">Claim Food</Button>
+          </CardFooter>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Fresh Vegetables</CardTitle>
+            <CardDescription>Posted 45 minutes ago</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-2">
+                <UtensilsCrossed className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">
+                  Various vegetables available
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">
+                  Pickup by 5:00 PM today
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">
+                  3.2 km away
+                </span>
+              </div>
+            </div>
+          </CardContent>
+          <CardFooter>
+            <Button className="w-full">Claim Food</Button>
+          </CardFooter>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Fresh Vegetables</CardTitle>
+            <CardDescription>Posted 45 minutes ago</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-2">
+                <UtensilsCrossed className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">
+                  Various vegetables available
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Clock className="w-4 h-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground">
+                  Pickup by 5:00 PM today
+                </span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-4 h-4 text-muted-foreground" />
                 <span className="text-sm text-muted-foreground">
                   3.2 km away
                 </span>
