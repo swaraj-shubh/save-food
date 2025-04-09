@@ -12,11 +12,11 @@ import {
 export function NavigationBar() {
   return (
     <header className="sticky w-full top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="flex items-center w-full h-16 px-4 md:px-8">
+      <div className="flex items-center w-full h-16 px-4 bg-purple-700 md:px-8">
         <div className="hidden mr-4 md:flex">
           <a className="flex items-center mr-6 space-x-2" href="/">
             <Heart className="w-6 h-6 fill-primary text-primary" />
-            <span className="hidden font-bold sm:inline-block">
+            <span className="hidden font-bold text-purple-950 sm:inline-block">
               FoodShare
             </span>
           </a>
@@ -89,6 +89,22 @@ export function NavigationBar() {
               >
                 <UserPlus className="w-5 h-5" />
                 About Us
+              </a>
+
+
+              <a
+                className="flex items-center gap-2 text-lg font-medium"
+                href="/nav/login"
+              >
+                <LogIn className="w-5 h-5" />
+                Login
+              </a>
+              <a
+                className="flex items-center gap-2 text-lg font-medium"
+                href="/nav/register"
+              >
+                <LogIn className="w-5 h-5" />
+                Register
               </a>
             </nav>
           </SheetContent>

@@ -40,7 +40,7 @@ export function Login() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen px-4 sm:px-8">
+    <div className="container flex flex-col items-center justify-center mx-auto">
       <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
         <div className="flex flex-col space-y-2 text-center">
           <Heart className="w-8 h-8 mx-auto text-primary" />

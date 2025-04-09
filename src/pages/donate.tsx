@@ -31,7 +31,7 @@ export function Donate() {
   return (
     <div className="w-full space-y-12">
       <section className="text-center">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tighter text-purple-500 sm:text-5xl">
           Donate Surplus Food
         </h1>
         <p className="mx-auto mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -46,7 +46,7 @@ export function Donate() {
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10">
               <UtensilsCrossed className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="text-xl font-bold">List Food Details</h3>
+            <h3 className="text-xl font-bold text-purple-600">List Food Details</h3>
             <p className="mt-2 text-muted-foreground">
               Provide information about the food items you wish to donate.
             </p>
@@ -57,7 +57,7 @@ export function Donate() {
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10">
               <Clock className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="text-xl font-bold">Set Pickup Time</h3>
+            <h3 className="text-xl font-bold text-purple-600">Set Pickup Time</h3>
             <p className="mt-2 text-muted-foreground">
               Choose a convenient time window for food pickup.
             </p>
@@ -68,7 +68,7 @@ export function Donate() {
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10">
               <MapPin className="w-6 h-6 text-primary" />
             </div>
-            <h3 className="text-xl font-bold">Location Details</h3>
+            <h3 className="text-xl font-bold text-purple-600">Location Details</h3>
             <p className="mt-2 text-muted-foreground">
               Provide pickup location information for easy coordination.
             </p>
@@ -78,7 +78,7 @@ export function Donate() {
 
       <Card className="max-w-2xl mx-auto">
         <CardHeader>
-          <CardTitle>Donation Details</CardTitle>
+          <CardTitle className='text-purple-800'>Donation Details</CardTitle>
         </CardHeader>
         <CardContent>
           <Form {...form}>
@@ -88,7 +88,7 @@ export function Donate() {
                 name="foodName"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Food Name</FormLabel>
+                    <FormLabel className='text-purple-600'>Food Name</FormLabel>
                     <FormControl>
                       <Input placeholder="e.g., Fresh Bread, Cooked Meals" {...field} />
                     </FormControl>
@@ -102,7 +102,7 @@ export function Donate() {
                 name="quantity"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Quantity</FormLabel>
+                    <FormLabel className='text-purple-600'>Quantity</FormLabel>
                     <FormControl>
                       <Input type="number" placeholder="Number of servings" {...field} />
                     </FormControl>
@@ -116,7 +116,7 @@ export function Donate() {
                 name="type"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Food Type</FormLabel>
+                    <FormLabel className='text-purple-600'>Food Type</FormLabel>
                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                       <FormControl>
                         <SelectTrigger>
@@ -140,7 +140,7 @@ export function Donate() {
                 name="description"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Description</FormLabel>
+                    <FormLabel className='text-purple-600'>Description</FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder="Provide details about the food items"
@@ -160,7 +160,7 @@ export function Donate() {
                 name="pickupTime"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Pickup Time</FormLabel>
+                    <FormLabel className='text-purple-600'>Pickup Time</FormLabel>
                     <FormControl>
                       <Input type="datetime-local" {...field} />
                     </FormControl>
@@ -169,7 +169,7 @@ export function Donate() {
                 )}
               />
 
-              <Button type="submit" className="w-full">
+              <Button type="submit" className="w-full bg-purple-600">
                 List Food Donation
               </Button>
             </form>

@@ -21,7 +21,7 @@ export function Find() {
   return (
     <div className="w-full space-y-12">
       <section className="text-center">
-        <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tighter text-purple-500 sm:text-5xl">
           Find Available Food
         </h1>
         <p className="mx-auto mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -32,7 +32,7 @@ export function Find() {
 
       <Card className="max-w-2xl mx-auto">
         <CardHeader>
-          <CardTitle>Search Filters</CardTitle>
+          <CardTitle className='text-purple-800 '>Search Filters</CardTitle>
           <CardDescription>
             Find food donations that match your needs
           </CardDescription>
@@ -41,7 +41,7 @@ export function Find() {
           <div className="grid gap-4">
             <div className="flex gap-4">
               <div className="flex-1">
-                <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                <label className="text-sm font-medium leading-none text-purple-600 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                   Location
                 </label>
                 <Input
@@ -51,7 +51,7 @@ export function Find() {
                 />
               </div>
               <div className="flex-1">
-                <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                <label className="text-sm font-medium leading-none text-purple-600 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                   Distance
                 </label>
                 <Select>
@@ -68,7 +68,7 @@ export function Find() {
               </div>
             </div>
             <div>
-              <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+              <label className="text-sm font-medium leading-none text-purple-600 peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                 Food Type
               </label>
               <Select>
@@ -87,7 +87,7 @@ export function Find() {
           </div>
         </CardContent>
         <CardFooter>
-          <Button className="w-full">
+          <Button className="w-full bg-purple-600">
             <Search className="w-4 h-4 mr-2" />
             Search Available Food
           </Button>
@@ -97,7 +97,7 @@ export function Find() {
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardHeader>
-            <CardTitle>Fresh Bread & Pastries</CardTitle>
+            <CardTitle className='text-purple-600'>Fresh Bread & Pastries</CardTitle>
             <CardDescription>Posted 15 minutes ago</CardDescription>
           </CardHeader>
           <CardContent>
@@ -123,13 +123,13 @@ export function Find() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Claim Food</Button>
+            <Button className="w-full bg-purple-600">Claim Food</Button>
           </CardFooter>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Cooked Meals</CardTitle>
+            <CardTitle className='text-purple-600'>Cooked Meals</CardTitle>
             <CardDescription>Posted 30 minutes ago</CardDescription>
           </CardHeader>
           <CardContent>
@@ -155,13 +155,13 @@ export function Find() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Claim Food</Button>
+            <Button className="w-full bg-purple-600">Claim Food</Button>
           </CardFooter>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Fresh Vegetables</CardTitle>
+            <CardTitle className='text-purple-600'>Fresh Vegetables</CardTitle>
             <CardDescription>Posted 45 minutes ago</CardDescription>
           </CardHeader>
           <CardContent>
@@ -187,13 +187,13 @@ export function Find() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Claim Food</Button>
+            <Button className="w-full bg-purple-600">Claim Food</Button>
           </CardFooter>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Fresh Vegetables</CardTitle>
+            <CardTitle className='text-purple-600'>Fresh Vegetables</CardTitle>
             <CardDescription>Posted 45 minutes ago</CardDescription>
           </CardHeader>
           <CardContent>
@@ -219,13 +219,13 @@ export function Find() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Claim Food</Button>
+            <Button className="w-full bg-purple-600">Claim Food</Button>
           </CardFooter>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>Fresh Vegetables</CardTitle>
+            <CardTitle className='text-purple-600'>Fresh Vegetables</CardTitle>
             <CardDescription>Posted 45 minutes ago</CardDescription>
           </CardHeader>
           <CardContent>
@@ -251,7 +251,7 @@ export function Find() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Claim Food</Button>
+            <Button className="w-full bg-purple-600">Claim Food</Button>
           </CardFooter>
         </Card>
       </div>
