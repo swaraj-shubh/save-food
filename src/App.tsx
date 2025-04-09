@@ -8,7 +8,7 @@ function App() {
     <ThemeProvider defaultTheme="light" storageKey="food-share-theme">
       <div className="min-h-screen bg-background">
         <NavigationBar />
-        <main className="container mx-auto px-4 py-8">
+        <main className="container px-4 py-8 mx-auto">
           <Routes />
         </main>
         <Toaster />

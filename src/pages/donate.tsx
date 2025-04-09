@@ -43,8 +43,8 @@ export function Donate() {
       <div className="grid gap-8 md:grid-cols-3">
         <Card>
           <CardContent className="pt-6">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <UtensilsCrossed className="h-6 w-6 text-primary" />
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10">
+              <UtensilsCrossed className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-xl font-bold">List Food Details</h3>
             <p className="mt-2 text-muted-foreground">
@@ -54,8 +54,8 @@ export function Donate() {
         </Card>
         <Card>
           <CardContent className="pt-6">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <Clock className="h-6 w-6 text-primary" />
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10">
+              <Clock className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-xl font-bold">Set Pickup Time</h3>
             <p className="mt-2 text-muted-foreground">
@@ -65,8 +65,8 @@ export function Donate() {
         </Card>
         <Card>
           <CardContent className="pt-6">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <MapPin className="h-6 w-6 text-primary" />
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10">
+              <MapPin className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-xl font-bold">Location Details</h3>
             <p className="mt-2 text-muted-foreground">
@@ -76,7 +76,7 @@ export function Donate() {
         </Card>
       </div>
 
-      <Card className="mx-auto max-w-2xl">
+      <Card className="max-w-2xl mx-auto">
         <CardHeader>
           <CardTitle>Donation Details</CardTitle>
         </CardHeader>

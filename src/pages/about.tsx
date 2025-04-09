@@ -24,8 +24,8 @@ export function About() {
       <section className="grid gap-8 md:grid-cols-2">
         <Card>
           <CardContent className="pt-6">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <Heart className="h-6 w-6 text-primary" />
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10">
+              <Heart className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-xl font-bold">Our Mission</h3>
             <p className="mt-2 text-muted-foreground">
@@ -36,8 +36,8 @@ export function About() {
         </Card>
         <Card>
           <CardContent className="pt-6">
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
-              <Leaf className="h-6 w-6 text-primary" />
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-primary/10">
+              <Leaf className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-xl font-bold">Environmental Impact</h3>
             <p className="mt-2 text-muted-foreground">
@@ -52,7 +52,7 @@ export function About() {
         <h2 className="text-3xl font-bold tracking-tighter">Why Choose Us</h2>
         <div className="grid gap-6 md:grid-cols-3">
           <div className="flex items-start space-x-4">
-            <ShieldCheck className="h-6 w-6 text-primary" />
+            <ShieldCheck className="w-6 h-6 text-primary" />
             <div>
               <h3 className="font-bold">Safe & Secure</h3>
               <p className="text-muted-foreground">
@@ -61,7 +61,7 @@ export function About() {
             </div>
           </div>
           <div className="flex items-start space-x-4">
-            <Users className="h-6 w-6 text-primary" />
+            <Users className="w-6 h-6 text-primary" />
             <div>
               <h3 className="font-bold">Community Focused</h3>
               <p className="text-muted-foreground">
@@ -70,7 +70,7 @@ export function About() {
             </div>
           </div>
           <div className="flex items-start space-x-4">
-            <Award className="h-6 w-6 text-primary" />
+            <Award className="w-6 h-6 text-primary" />
             <div>
               <h3 className="font-bold">Quality Assured</h3>
               <p className="text-muted-foreground">
@@ -81,9 +81,9 @@ export function About() {
         </div>
       </section>
 
-      <section className="rounded-lg bg-muted p-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <Utensils className="mx-auto h-12 w-12 text-primary" />
+      <section className="p-8 rounded-lg bg-muted">
+        <div className="max-w-3xl mx-auto text-center">
+          <Utensils className="w-12 h-12 mx-auto text-primary" />
           <h2 className="mt-4 text-3xl font-bold tracking-tighter">
             Join Our Mission
           </h2>
